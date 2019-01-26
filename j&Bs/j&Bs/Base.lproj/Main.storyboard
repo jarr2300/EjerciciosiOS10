@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="j_Bs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="szr-d9-CYd">
+                                <rect key="frame" x="135" y="30" width="105" height="56.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J&amp;B´s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzO-xd-ttW">
+                                        <rect key="frame" x="3.5" y="0.0" width="98.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ub4-M7-xqC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="35"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.47058823529999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="shadowColor" red="1" green="0.054973321970000003" blue="0.055018812139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <size key="shadowOffset" width="2" height="-1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La tienda de ropa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3U-ZU-Jaw">
+                                        <rect key="frame" x="0.0" y="41" width="105" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="13"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.47058823529999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="shadowColor" red="1" green="0.054973321970000003" blue="0.055018812139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <size key="shadowOffset" width="1" height="-1"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="2RZ-j2-qOm">
+                                <rect key="frame" x="30" y="282.5" width="315" height="102"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camiseta-1" translatesAutoresizingMaskIntoConstraints="NO" id="ejn-Za-j8m">
+                                        <rect key="frame" x="0.0" y="0.0" width="99" height="102"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camiseta-2" translatesAutoresizingMaskIntoConstraints="NO" id="x7h-hT-Yso">
+                                        <rect key="frame" x="108" y="0.0" width="99" height="102"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camiseta-3" translatesAutoresizingMaskIntoConstraints="NO" id="Yez-im-C49">
+                                        <rect key="frame" x="216" y="0.0" width="99" height="102"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2RZ-j2-qOm" secondAttribute="height" multiplier="663:214" id="Ied-ui-06l"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="thB-cB-zQ2">
+                                <rect key="frame" x="137.5" y="581" width="100" height="76"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBm-fN-0I9">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="36"/>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.47058823529999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <color key="tintColor" red="1" green="0.054973321970000003" blue="0.055018812139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <size key="titleShadowOffset" width="1" height="-1"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="1" green="0.054973321970000003" blue="0.055018812139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlN-LF-1sr">
+                                        <rect key="frame" x="0.0" y="40" width="100" height="36"/>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.47058823529999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <size key="titleShadowOffset" width="1" height="-1"/>
+                                        <state key="normal" title="Regístrate">
+                                            <color key="titleColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="1" green="0.054973321970000003" blue="0.055018812139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="kbf-Ol-7jE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91594088075558888" green="1" blue="0.8877353459808921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="2RZ-j2-qOm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="4Vg-Af-7aK"/>
+                            <constraint firstItem="szr-d9-CYd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="F0o-60-3c8"/>
+                            <constraint firstItem="szr-d9-CYd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LVC-Mm-4mD"/>
+                            <constraint firstItem="thB-cB-zQ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NfS-PS-uga"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="thB-cB-zQ2" secondAttribute="bottom" constant="10" id="cxp-ri-Avh"/>
+                            <constraint firstItem="2RZ-j2-qOm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dch-ep-lxM"/>
+                            <constraint firstAttribute="trailing" secondItem="2RZ-j2-qOm" secondAttribute="trailing" constant="30" id="rsa-Qa-29z"/>
+                            <constraint firstItem="2RZ-j2-qOm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sky-A5-yXA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <color key="backgroundColor" red="1" green="0.89317803720552558" blue="0.70875326486170231" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camiseta-1" width="221" height="214"/>
+        <image name="camiseta-2" width="217" height="211"/>
+        <image name="camiseta-3" width="215" height="202"/>
+    </resources>
+</document>
