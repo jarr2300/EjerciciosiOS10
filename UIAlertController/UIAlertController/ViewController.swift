@@ -11,24 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    var saludo : UIAlertController {
-        let alert = UIAlertController(title: "Hola", message: "Esto es un mensaje de bienvenida", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "UNO", style: .destructive, handler: { (_) in
-            print("User click Approve button")
-        }))
-        self.present(alert, animated: true, completion: {
-            print("completion block")
-        })
-        return alert
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         OperationQueue.main.addOperation{
-            self.saludo
+            self.hola("Este es el primero")
         }
         
     }
@@ -36,14 +24,14 @@ class ViewController: UIViewController {
     
     
     @IBAction func accion(_ sender: UIButton) {
-    hola()
+        hola("Cuidado")
     }
     
     
     
-    func hola() {
+    func hola(_ saludo: String) {
         let alert = UIAlertController(title: "Hola", message: "Esto es un mensaje de bienvenida", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "DOS", style: .destructive, handler: { (_) in
+        alert.addAction(UIAlertAction(title: "\(saludo)", style: .destructive, handler: { (_) in
             print("User click Approve button")
         }))
         self.present(alert, animated: true, completion: {
