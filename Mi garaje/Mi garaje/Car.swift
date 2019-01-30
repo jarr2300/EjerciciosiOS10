@@ -32,16 +32,23 @@ class Car: NSObject {
         
     }
     
-    init(cv: Int, marca: String, modelo: String, color: UIColor, kms: Double, imageName : String?){
+    init(cv: Int, marca: String, modelo: String, color: UIColor, kms: Double, image : UIImage?){
         
         self.cv = cv
         self.marca = marca
         self.modelo = modelo
         self.color = color
         self.kms = kms
-        if let ImageName = imageName{
-        self.image = UIImage(named: ImageName)
-        }
+        if let image = image{
+            self.image = image
+            
+            
+            /*
+ if let ImageName = imageName{
+ self.image = UIImage(named: ImageName)
+            */
+            
+        } 
     }
     
 }
